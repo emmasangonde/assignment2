@@ -4,22 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trial Questions</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* small table styling specific to this page */
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      background: rgba(255, 255, 255, 0.75);
-      margin-bottom: 20px;
-    }
-    th, td {
-      border: 2px solid black;
-      padding: 10px;
-      text-align: left;
-      vertical-align: top;
-    }
-  </style>
+  <link rel="stylesheet" href="styles_Version2.css" />
 </head>
 
 <body>
@@ -30,21 +15,23 @@
 
   <main class="container">
     <section class="card">
-      <p><b>1. Write HTML codes to come up with the outlook below:</b></p>
+      <h2 class="section-title">1. Superscripts and Subscripts</h2>
+      <p><b>Write HTML codes to come up with the outlook below:</b></p>
       <ol type="i">
         <li>a <sup>2</sup> + b <sup>2</sup> = c <sup>2</sup></li>
         <li>log <sub>b</sub> a = log <sub>c</sub> a / log <sub>c</sub> b</li>
         <li>
           This text contains <sup>sensitive</sup> information which may be
-          <sup>deciphered</sup> by <b style="color:#a00303;">NASA.</b>
+          <sup>deciphered</sup> by <b class="accent-text">NASA.</b>
         </li>
       </ol>
     </section>
 
     <section class="card">
-      <p><b>2. Write simple HTML codes to produce the results below:</b></p>
+      <h2 class="section-title">2. Nested Lists</h2>
+      <p><b>Write simple HTML codes to produce the results below:</b></p>
 
-      <p><b>i. My First List</b></p>
+      <h3>i. My First List</h3>
       <ol>
         <li><b>Fruits</b>
           <ol type="i">
@@ -100,7 +87,7 @@
 
       <hr />
 
-      <p><b>ii. My Second List</b></p>
+      <h3>ii. My Second List</h3>
       <ol type="A">
         <li><b>Fruits</b>
           <ol type="1">
@@ -146,7 +133,10 @@
     </section>
 
     <section class="card">
-      <p><b>iii. My First Table</b></p>
+      <h2 class="section-title">3. Tables</h2>
+
+      <h3>iii. My First Table</h3>
+      <div class="table-wrap">
       <table>
         <tr>
           <th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th>
@@ -164,8 +154,10 @@
           <td>SCS101</td><td></td><td></td><td>SCS102</td><td>SCS102</td>
         </tr>
       </table>
+      </div>
 
-      <p><b>iv. My Second Table</b></p>
+      <h3>iv. My Second Table</h3>
+      <div class="table-wrap">
       <table>
         <tr>
           <th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th>
@@ -183,8 +175,10 @@
           <td>SCS101</td><td></td><td></td><td>SCS102</td><td>SCS102</td>
         </tr>
       </table>
+      </div>
 
-      <p><b>v. My Third Table</b></p>
+      <h3>v. My Third Table</h3>
+      <div class="table-wrap">
       <table>
         <tr>
           <th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th>
@@ -211,9 +205,11 @@
           <td>SCS101</td><td></td><td></td><td>SCS102</td><td>SCS102</td>
         </tr>
       </table>
+      </div>
 
-      <p><b>vi. My Fourth Table</b></p>
-      <table style="width:100%;" cellpadding="15">
+      <h3>vi. My Fourth Table</h3>
+      <div class="table-wrap">
+      <table class="roomy-table">
         <tr>
           <th>Monday</th>
           <th>Tuesday</th>
@@ -226,11 +222,11 @@
         <tr>
           <td>SCS101</td>
           <td>SCS104</td>
-          <td rowspan="2" style="text-align:center; font-weight:bold;">
+          <td rowspan="2" class="vertical-label">
             B<br />R<br />E<br />A<br />K
           </td>
           <td>SCS105</td>
-          <td rowspan="2" style="text-align:center; font-weight:bold;">
+          <td rowspan="2" class="vertical-label">
             L<br />U<br />N<br />C<br />H
           </td>
           <td><b>SCS102</b></td>
@@ -244,6 +240,7 @@
           <td>SCS105</td>
         </tr>
       </table>
+      </div>
     </section>
 
     <p class="back">
