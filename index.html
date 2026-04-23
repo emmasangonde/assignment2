@@ -2,40 +2,116 @@
 <html>
 <head>
     <title>My Profile Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            background: #dfe1e6;
+            color: #111;
+        }
+
+        .page {
+            width: 95%;
+            max-width: 760px;
+            margin: 16px auto;
+            border: 1px dashed #999;
+            background: #eeeeee;
+        }
+
+        .section {
+            padding: 18px;
+            border-bottom: 1px solid #b8b8b8;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            min-height: 180px;
+        }
+
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .bio-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #efefef;
+        }
+
+        .bio-table th,
+        .bio-table td {
+            border: 1px solid #888;
+            padding: 8px;
+            font-size: 18px;
+            vertical-align: top;
+        }
+
+        .bio-table th {
+            text-align: center;
+            font-size: 34px;
+        }
+
+        .links a {
+            margin-right: 14px;
+        }
+    </style>
 </head>
 
 <body>
+    <main class="page">
+        <section class="section profile">
+            <img src="ngonde.jpg" alt="My Profile">
+            <div>
+                <p><b>Name:</b> NGONDE EMMANUEL</p>
+                <p><b>Course:</b> Bachelor of Information Technology and Computing</p>
+                <p><b>Year:</b> Year 2, Semester 2</p>
+            </div>
+        </section>
 
-    <h1>Welcome to My Profile</h1>
+        <section class="section">
+            <table class="bio-table">
+                <tr>
+                    <th>School</th>
+                    <th>Year</th>
+                    <th>Award</th>
+                </tr>
+                <tr>
+                    <td>2024-Present</td>
+                    <td>Kyambogo University</td>
+                    <td>Bachelor of Information Technology and Computing (BITC)</td>
+                </tr>
+                <tr>
+                    <td>2017-2019</td>
+                    <td>KOLOLO HIGH SCHOOL</td>
+                    <td>Uganda Advanced Certificate of Education (UACE)</td>
+                </tr>
+                <tr>
+                    <td>2013-2016</td>
+                    <td>BUWENGE COLLEGE</td>
+                    <td>Uganda Certificate of Education (UCE)</td>
+                </tr>
+            </table>
+        </section>
 
-    <img src="ngonde.jpg" width="150" alt="My Profile">
+        <section class="section">
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Reading books</li>
+                <li>Playing Soccer</li>
+            </ul>
+        </section>
 
-    <p><b>Name:</b> NGONDE EMMANUEL</p>
-    <p><b>University:</b> Kyambogo University</p>
-    <p><b>Course:</b> Bachelor of Information Technology and Computing</p>
-    <p><b>Year:</b> Year 2, Semester 2</p>
-
-    <h3>Education Background</h3>
-    <ul>
-        <li>2024 - Present: Kyambogo University (Bachelor of Information Technology and Computing)</li>
-        <li>2017- 2019: KOLOLO HIGH SCHOOL(UACE)</li>
-        <li>2013-2016: BUWENGE COLLEGE(UCE)</li>
-    </ul>
-
-    <h3>Hobbies</h3>
-    <ul>
-        <li>Reading books</li>
-        <li>Playing Soccer</li>
-    </ul>
-
-    <h3>My GitHub</h3>
-    <p>
-        <a href="https://github.dev/authentiano/assignment2">Visit My GitHub</a>
-    </p>
-
-    <br>
-
-    <a href="main.html">Back to Table Page</a>
+        <section class="section links">
+            <h3>My GitHub</h3>
+            <a href="https://github.dev/authentiano/assignment2">Visit My GitHub</a>
+            <a href="main.html">Back to Table Page</a>
+        </section>
+    </main>
 
 </body>
 </html>
