@@ -108,6 +108,11 @@ td {
   vertical-align: top;
 }
 
+.roomy-table th,
+.roomy-table td {
+  padding: 15px;
+}
+
 .social-links {
   display: flex;
   flex-wrap: wrap;
