@@ -131,3 +131,12 @@ td {
   width: 18px;
   height: 18px;
 }
+
+.nasa-text {
+  color: #a00303;
+}
+
+.vertical-label {
+  text-align: center;
+  font-weight: bold;
+}
