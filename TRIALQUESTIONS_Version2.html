@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trial Questions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* small table styling specific to this page */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.75);
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 2px solid black;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Trial Questions</h1>
+    <p class="subtitle">Lists, superscripts/subscripts, and tables</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <p><b>1. Write HTML codes to come up with the outlook below:</b></p>
+      <ol type="i">
+        <li>a <sup>2</sup> + b <sup>2</sup> = c <sup>2</sup></li>
+        <li>log <sub>b</sub> a = log <sub>c</sub> a / log <sub>c</sub> b</li>
+        <li>
+          This text contains <sup>sensitive</sup> information which may be
+          <sup>deciphered</sup> by <b style="color:#a00303;">NASA.</b>
+        </li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <p><b>2. Write simple HTML codes to produce the results below:</b></p>
+
+      <p><b>i. My First List</b></p>
+      <ol>
+        <li><b>Fruits</b>
+          <ol type="i">
+            <li><b>Berries:</b>
+              <ul type="circle">
+                <li>Apples</li>
+                <li>Tomatoes</li>
+              </ul>
+            </li>
+            <li><b>Drupes</b>
+              <ul type="square">
+                <li>Mango</li>
+                <li>Avocado</li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+
+        <li><b>Vegetables</b>
+          <ol type="a">
+            <li><b>Leafy</b>
+              <ul type="disc">
+                <li>Kale</li>
+                <li>Spinach</li>
+              </ul>
+            </li>
+            <li><b>Non-leafy</b>
+              <ul type="disc">
+                <li>Cabbage</li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+
+        <li><b>Meats</b>
+          <ul type="disc">
+            <li><b>White meats</b>
+              <ol type="A">
+                <li>Chicken</li>
+                <li>Tuna</li>
+              </ol>
+            </li>
+
+            <li><b>Red meats</b>
+              <ol type="I">
+                <li>Beef</li>
+                <li>Mutton</li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+      <hr />
+
+      <p><b>ii. My Second List</b></p>
+      <ol type="A">
+        <li><b>Fruits</b>
+          <ol type="1">
+            <li><b>Berries:</b>
+              <ol type="a">
+                <li>Apples</li>
+                <li>Tomatoes</li>
+              </ol>
+            </li>
+
+            <li><b>Drupes</b>
+              <ol type="i">
+                <li>Mango</li>
+                <li>Avocado</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+
+        <li><b>Vegetables</b>
+          <ul type="disc">
+            <li><b>Leafy</b>
+              <ol type="i">
+                <li>Kale</li>
+                <li>Spinach</li>
+              </ol>
+            </li>
+
+            <li><b>Non-leafy</b>
+              <ol type="a">
+                <li>Cabbage</li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+
+        <li><b>Meats</b>
+          <ul type="square">
+            <li><b>White meats</b></li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <p><b>iii. My First Table</b></p>
+      <table>
+        <tr>
+          <th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th>
+        </tr>
+        <tr>
+          <td>SCS101</td><td>SCS104</td><td>SCS105</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td></td><td></td><td>SCS104</td><td></td><td>SCS105</td>
+        </tr>
+        <tr>
+          <td></td><td>SCS101</td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+          <td>SCS101</td><td></td><td></td><td>SCS102</td><td>SCS102</td>
+        </tr>
+      </table>
+
+      <p><b>iv. My Second Table</b></p>
+      <table>
+        <tr>
+          <th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th>
+        </tr>
+        <tr>
+          <td rowspan="2">SCS101</td><td>SCS104</td><td>SCS105</td><td rowspan="2"></td><td></td>
+        </tr>
+        <tr>
+          <td></td><td>SCS104</td><td>SCS105</td>
+        </tr>
+        <tr>
+          <td></td><td colspan="4">SCS101</td>
+        </tr>
+        <tr>
+          <td>SCS101</td><td></td><td></td><td>SCS102</td><td>SCS102</td>
+        </tr>
+      </table>
+
+      <p><b>v. My Third Table</b></p>
+      <table>
+        <tr>
+          <th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th>
+        </tr>
+        <tr>
+          <td rowspan="2">SCS101</td>
+          <td>SCS104</td>
+          <td>SCS105</td>
+          <td rowspan="2">
+            <ol type="i">
+              <li><b>Eat</b></li>
+              <li><b>Sleep</b></li>
+            </ol>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td><td>SCS104</td><td>SCS105</td>
+        </tr>
+        <tr>
+          <td></td><td colspan="4">SCS101</td>
+        </tr>
+        <tr>
+          <td>SCS101</td><td></td><td></td><td>SCS102</td><td>SCS102</td>
+        </tr>
+      </table>
+
+      <p><b>vi. My Fourth Table</b></p>
+      <table style="width:100%;" cellpadding="15">
+        <tr>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th></th>
+          <th>Wednesday</th>
+          <th></th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+        <tr>
+          <td>SCS101</td>
+          <td>SCS104</td>
+          <td rowspan="2" style="text-align:center; font-weight:bold;">
+            B<br />R<br />E<br />A<br />K
+          </td>
+          <td>SCS105</td>
+          <td rowspan="2" style="text-align:center; font-weight:bold;">
+            L<br />U<br />N<br />C<br />H
+          </td>
+          <td><b>SCS102</b></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td><b>SCS111</b></td>
+          <td></td>
+          <td>SCS104</td>
+          <td></td>
+          <td>SCS105</td>
+        </tr>
+      </table>
+    </section>
+
+    <p class="back">
+      <a href="index.html">Back to Profile Page</a>
+    </p>
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> NGONDE EMMANUEL</small>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
